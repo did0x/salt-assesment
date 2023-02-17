@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/newsFragment">
+
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.putrash.saltassesment.arch.ui.news.NewsFragment"
+        android:label="NewsFragment"
+        tools:layout="@layout/fragment_news">
+        <action
+            android:id="@+id/action_newsFragment_to_newsDiscoverFragment"
+            app:destination="@id/newsDiscoverFragment" />
+        <action
+            android:id="@+id/action_newsFragment_to_newsDetailFragment"
+            app:destination="@id/newsDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsDetailFragment"
+        android:name="com.putrash.saltassesment.arch.ui.news.detail.NewsDetailFragment"
+        android:label="NewsDetailFragment"
+        tools:layout="@layout/fragment_news_detail" />
+    <fragment
+        android:id="@+id/newsDiscoverFragment"
+        android:name="com.putrash.saltassesment.arch.ui.news.discover.NewsDiscoverFragment"
+        android:label="NewsDiscoverFragment"
+        tools:layout="@layout/fragment_news_discover">
+        <action
+            android:id="@+id/action_newsDiscoverFragment_to_newsDetailFragment"
+            app:destination="@id/newsDetailFragment" />
+    </fragment>
+</navigation>

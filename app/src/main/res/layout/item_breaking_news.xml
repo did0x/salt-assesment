@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_240sdp"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_6sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivThumbnail"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_120sdp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shapeAppearance="@style/ShapeAppearance.App.RoundedImageView"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvNewsTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:ellipsize="end"
+        app:layout_constraintTop_toBottomOf="@id/ivThumbnail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textStyle="bold"
+        android:layout_marginVertical="@dimen/_6sdp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1.Core"
+        tools:text="Ini Judul Beritanya"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvNewsDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="3"
+        android:ellipsize="end"
+        app:layout_constraintTop_toBottomOf="@id/tvNewsTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body2.Core"
+        android:layout_marginVertical="@dimen/_4sdp"
+        tools:text="Ini deskripsi mengenai berita yang akan ditampilkan"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
