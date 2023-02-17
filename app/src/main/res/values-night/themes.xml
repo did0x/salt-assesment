@@ -15,5 +15,6 @@
         <item name="android:colorBackground">@color/black_700</item>
         <item name="colorCardBackground">@color/black_500</item>
         <item name="colorTextTitle">@color/white</item>
+        <item name="colorTextBody">@color/white</item>
     </style>
 </resources>

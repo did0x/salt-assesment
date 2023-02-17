@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.45"
+        app:layout_constraintGuide_percent="0.525"
         />
 
     <androidx.appcompat.widget.AppCompatImageView
@@ -78,6 +78,7 @@
         android:layout_height="wrap_content"
         android:text="Breaking News"
         android:layout_margin="@dimen/_12sdp"
+        app:layout_constraintBottom_toTopOf="@id/rvNews"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Body1.Core"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/view"
