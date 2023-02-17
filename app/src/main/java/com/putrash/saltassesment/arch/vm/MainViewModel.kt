@@ -22,7 +22,11 @@ class MainViewModel(application: Application, private val api: Api) : BaseViewMo
     val articles: LiveData<Event<ArrayList<Article>>> get() = _articles
 
     private fun getCountryCode(): String {
-        return telephonyManager.networkCountryIso
+        if (telephonyManager.networkCountryIso.isNotEmpty()) {
+            return telephonyManager.networkCountryIso
+        } else {
+            return "us"
+        }
     }
 
     fun getHeadlines() {

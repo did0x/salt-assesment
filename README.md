@@ -3,6 +3,10 @@
 ## Preview
 Here are the preview of the app,
 
+![](https://i.ibb.co/YWbXFM1/Screenshot-20230217-101702.png)
+![](https://i.ibb.co/ysbsHrR/Screenshot-20230217-101923.png)
+![](https://i.ibb.co/F3ZM0DG/Screenshot-20230217-101934.png)
+
 ## Features
 There are some such features like,
 
